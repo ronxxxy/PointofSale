@@ -2,16 +2,23 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="img/logo/logo.png" rel="icon">
-  <title>RuangAdmin - Buttons</title>
+  <link href="img/logo/logo2.png" rel="icon">
+  <title>Employee Attendance</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--For Table-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.bootstrap5.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/searchpanes/2.3.2/css/searchPanes.bootstrap5.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/select/2.1.0/css/select.bootstrap5.css">
+  <!--Close-->
+
   <link href="css/ruang-admin.min.css" rel="stylesheet">
 </head>
 
@@ -20,41 +27,50 @@
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
+        <div class="sidebar-brand-icon"> 
           <img src="img/logo/logo2.png">
         </div>
-        <div class="sidebar-brand-text mx-3">RuangAdmin</div>
+        <div class="sidebar-brand-text mx-3" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-style: normal;">AMB Solutions</div>
       </a>
       <hr class="sidebar-divider my-0">
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
       <hr class="sidebar-divider">
       <div class="sidebar-heading">
-        Features
+        Admin Side
       </div>
-      <li class="nav-item active">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="far fa-fw fa-window-maximize"></i>
-          <span>Bootstrap UI</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse show" aria-labelledby="headingBootstrap"
-          data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Bootstrap UI</h6>
-            <a class="collapse-item" href="alerts.html">Alerts</a>
-            <a class="collapse-item active" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="dropdowns.html">Dropdowns</a>
-            <a class="collapse-item" href="modals.html">Modals</a>
-            <a class="collapse-item" href="popovers.html">Popovers</a>
-            <a class="collapse-item" href="progress-bar.html">Progress Bars</a>
-          </div>
-        </div>
+      <!--Project List-->
+      <li class="nav-item">
+        <a class="nav-link" href="ProjectTable.html">
+          <i class="fas fa-project-diagram"></i>
+          <span>Projects</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="Add_Project.html">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>Add Project</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="attendence.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Employees Attendance</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Page.html">
+          <i class="fas fa-fw fa-user"></i>
+          <span>Employees page</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Profile.html">
+          <i class="fa fa-user-circle-o"></i>
+          <span>View Employees profile</span></a>
+      </li>
+      <!--Project List End-->
+
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
           aria-controls="collapseForm">
           <i class="fab fa-fw fa-wpforms"></i>
@@ -62,7 +78,6 @@
         </a>
         <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Forms</h6>
             <a class="collapse-item" href="form_basics.html">Form Basics</a>
             <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
           </div>
@@ -76,21 +91,89 @@
         </a>
         <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Tables</h6>
             <a class="collapse-item" href="simple-tables.html">Simple Tables</a>
             <a class="collapse-item" href="datatables.html">DataTables</a>
           </div>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ui-colors.html">
-          <i class="fas fa-fw fa-palette"></i>
-          <span>UI Colors</span>
-        </a>
-      </li>
+      </li> -->
+
+      <!--Employee Side-->
       <hr class="sidebar-divider">
       <div class="sidebar-heading">
-        Examples
+        Employees Side
+      </div>
+      <li class="nav-item ">
+        <a class="nav-link" href="projectEmployees.html">
+          <i class="fas fa-project-diagram"></i>
+          <span>Project</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="EmployyeAttendenceFrom.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Attendance Page</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="AddEmployeeForm.html">
+          <i class="fa fa-user-circle-o"></i>
+          <span>Add Profile</span></a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
+          aria-controls="collapsePage">
+          <i class="fas fa-fw fa-columns"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="login.html">Login</a>
+            <a class="collapse-item" href="register.html">Register</a>
+            <a class="collapse-item" href="404.html">404 Page</a>
+            <a class="collapse-item" href="blank.html">Blank Page</a>
+          </div>
+        </div>
+      </li> -->
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Authentication
+      </div>
+      <li class="nav-item ">
+        <a class="nav-link" href="login.html" target="new">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Login</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="register.html" target="new">
+          <i class="fa fa-user-circle-o"></i>
+          <span>Register</span></a>
+      </li>
+
+
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Other Pages
+      </div>
+      <li class="nav-item ">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Charts</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="blank.html">
+          <i class="fa fa-user-circle-o"></i>
+          <span>Blank</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="404.html">
+          <i class="fa fa-user-circle-o"></i>
+          <span>404</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      
+      <!--Employee Side CLOSE-->
+
+      <!--Other Features-->
+      <!-- <div class="sidebar-heading">
+        Other Features
       </div>
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
@@ -100,7 +183,6 @@
         </a>
         <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Example Pages</h6>
             <a class="collapse-item" href="login.html">Login</a>
             <a class="collapse-item" href="register.html">Register</a>
             <a class="collapse-item" href="404.html">404 Page</a>
@@ -114,8 +196,9 @@
           <span>Charts</span>
         </a>
       </li>
-      <hr class="sidebar-divider">
+      <hr class="sidebar-divider"> -->
       <div class="version" id="version-ruangadmin"></div>
+      <!--Other Features CLOSE-->
     </ul>
     <!-- Sidebar -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -281,7 +364,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
-                <span class="ml-2 d-none d-lg-inline text-white small">Maman Ketoprak</span>
+                <span class="ml-2 d-none d-lg-inline text-white small">Admin</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
@@ -306,256 +389,178 @@
           </ul>
         </nav>
         <!-- Topbar -->
-        <!-- Container Fluid -->
+        <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Buttons</h1>
+            <h1 class="h3 mb-0 text-gray-800">Employees Attendance</h1>
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./">Home</a></li>
-              <li class="breadcrumb-item">Bootstrap UI</li>
-              <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+              <li class="breadcrumb-item">Tables</li>
+              <li class="breadcrumb-item active" aria-current="page">Attendence</li>
             </ol>
           </div>
 
-          <!-- row -->
           <div class="row">
-            <!-- Basic Button -->
-            <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Basic Buttons</h6>
+            <div class="col-lg-12 mb-4">
+              <!-- Simple Tables -->
+              <div class="card">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h4 class="m-0 font-weight-bold text-primary m-2" style="letter-spacing: 1.5px;">Attendence</h4>
                 </div>
-                <div class="card-body">
-                  <p>Bootstrap includes several predefined button styles, each serving its own
-                    semantic purpose, with a
-                    few extras thrown in for more control.</p>
-                  <button type="button" class="btn btn-primary mb-1">Primary</button>
-                  <button type="button" class="btn btn-secondary mb-1">Secondary</button>
-                  <button type="button" class="btn btn-success mb-1">Success</button>
-                  <button type="button" class="btn btn-danger mb-1">Danger</button>
-                  <button type="button" class="btn btn-warning mb-1">Warning</button>
-                  <button type="button" class="btn btn-info mb-1">Info</button>
-                  <button type="button" class="btn btn-light mb-1">Light</button>
-                  <button type="button" class="btn btn-dark mb-1">Dark</button>
-                  <button type="button" class="btn btn-link">Link</button>
-                </div>
-              </div>
-            </div>
+                <!--Table-->
+                <div class="table-responsive">
+                  
+                  <table id="example" class="table table-striped nowrap" style="width:100%; font-family: 'poppins',sans-serif; font-weight: 300; font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th style="background: #6777ef !important; color: white !important;">S.no</th>
+                            <th style="background: #6777ef !important; color: white !important;">Employee Id</th>
+                            <th style="background: #6777ef !important; color: white !important;">Employee Name</th>
+                            <th style="background: #6777ef !important; color: white !important;">Designation</th>
+                            <th style="background: #6777ef !important; color: white !important;">Clock In</th>
+                            <th style="background: #6777ef !important; color: white !important;">Clock Out</th>
+                            <th style="background: #6777ef !important; color: white !important;">Date</th>
+                            <th style="background: #6777ef !important; color: white !important;">Present/Absent</th>
+                            <th style="background: #6777ef !important; color: white !important;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>AMB-123</td>
+                            <td>Abdul Rafay</td>
+                            <td>.NET Developer</td>
+                            <td>9:00 am</td>
+                            <td>5:00 pm</td>
+                            <td>25-September-2024</td>
+                            <td>Present</td>
+                            <td>
+                              <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                              <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>AMB-123</td>
+                          <td>Mahnoor Fatima</td>
+                          <td>Digital Marketer</td>
+                          <td>9:00 am</td>
+                          <td>5:00 pm</td>
+                          <td>25-September-2024</td>
+                          <td>Present</td>
+                          <td>
+                            <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                            <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>AMB-123</td>
+                        <td>Kainat Nawaz</td>
+                        <td>Flutter Developer</td>
+                        <td>9:00 am</td>
+                        <td>5:00 pm</td>
+                        <td>25-September-2024</td>
+                        <td>Present</td>
+                        <td>
+                          <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                          <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>AMB-123</td>
+                        <td>Naina Lohana</td>
+                        <td>Flutter Developer</td>
+                        <td>9:00 am</td>
+                        <td>5:00 pm</td>
+                        <td>25-September-2024</td>
+                        <td>Present</td>
+                        <td>
+                          <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                          <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>AMB-123</td>
+                        <td>Sumiya khan</td>
+                        <td>Full Stack Developer</td>
+                        <td>9:00 am</td>
+                        <td>5:00 pm</td>
+                        <td>25-September-2024</td>
+                        <td>Present</td>
+                        <td>
+                          <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                          <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>AMB-123</td>
+                        <td>Zohaib Ghouri</td>
+                        <td>SEO/Digital Marketing Expert</td>
+                        <td>9:00 am</td>
+                        <td>5:00 pm</td>
+                        <td>25-September-2024</td>
+                        <td>Present</td>
+                        <td>
+                          <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                          <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>AMB-123</td>
+                        <td>Faraz Ali</td>
+                        <td>Project Manager/AI Engineer</td>
+                        <td>9:00 am</td>
+                        <td>5:00 pm</td>
+                        <td>25-September-2024</td>
+                        <td>Present</td>
+                        <td>
+                          <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                          <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>AMB-123</td>
+                        <td>Arif Ali</td>
+                        <td>Jr project Manager/Graphic designer</td>
+                        <td>9:00 am</td>
+                        <td>5:00 pm</td>
+                        <td>25-September-2024</td>
+                        <td>Present</td>
+                        <td>
+                          <button class="btn btn-sm btn-success rounded-0">Edit</button>
+                          <button class="btn btn-sm btn-danger rounded-0">Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th style="background: #6777ef !important; color: white !important;">S.no</th>
+                        <th style="background: #6777ef !important; color: white !important;">Employee Id</th>
+                        <th style="background: #6777ef !important; color: white !important;">Employee Name</th>
+                        <th style="background: #6777ef !important; color: white !important;">Designation</th>
+                        <th style="background: #6777ef !important; color: white !important;">Clock In</th>
+                        <th style="background: #6777ef !important; color: white !important;">Clock Out</th>
+                        <th style="background: #6777ef !important; color: white !important;">Date</th>
+                        <th style="background: #6777ef !important; color: white !important;">Present/Absent</th>
+                        <th style="background: #6777ef !important; color: white !important;">Action</th>
+                    </tr>
+                    </tfoot>
+                  </table>
 
-            <!-- Outline Buttons -->
-            <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Outline Buttons</h6>
                 </div>
-                <div class="card-body">
-                  <p>In need of a button, but not the hefty background colors they bring? Replace the
-                    default modifier
-                    classes with the <code class="highlighter-rouge">.btn-outline-*</code> ones to
-                    remove all background
-                    images and colors on any button.</p>
-                  <button type="button" class="btn btn-outline-primary mb-1">Primary</button>
-                  <button type="button" class="btn btn-outline-secondary mb-1">Secondary</button>
-                  <button type="button" class="btn btn-outline-success mb-1">Success</button>
-                  <button type="button" class="btn btn-outline-danger mb-1">Danger</button>
-                  <button type="button" class="btn btn-outline-warning mb-1">Warning</button>
-                  <button type="button" class="btn btn-outline-info mb-1">Info</button>
-                  <button type="button" class="btn btn-outline-light mb-1">Light</button>
-                  <button type="button" class="btn btn-outline-dark mb-1">Dark</button>
-                </div>
-              </div>
-            </div>
+                <!--Table END-->
 
-            <div class="col-lg-6">
-              <!-- Sizing Buttons -->
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Sizing Buttons</h6>
-                </div>
-                <div class="card-body">
-                  <p>Use Font Awesome Icons (included with this theme package) along with the sizing buttons as shown in
-                    the examples below!</p>
-                  <!-- Buttons (Default) -->
-                  <div class="mb-2">
-                    <code>.btn</code> only
-                  </div>
-                  <a href="#" class="btn btn-primary">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" class="btn btn-success">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#" class="btn btn-info">
-                    <i class="fas fa-info-circle"></i>
-                  </a>
-                  <a href="#" class="btn btn-warning">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </a>
-                  <a href="#" class="btn btn-danger">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                  <!-- Buttons (Small) -->
-                  <div class="mt-4 mb-2">
-                    with <code>.btn-sm</code>
-                  </div>
-                  <a href="#" class="btn btn-primary btn-sm">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" class="btn btn-success btn-sm">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#" class="btn btn-info btn-sm">
-                    <i class="fas fa-info-circle"></i>
-                  </a>
-                  <a href="#" class="btn btn-warning btn-sm">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </a>
-                  <a href="#" class="btn btn-danger btn-sm">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                  <!-- Buttons (Large) -->
-                  <div class="mt-4 mb-2">
-                    with <code>.btn-lg</code>
-                  </div>
-                  <a href="#" class="btn btn-primary btn-lg">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" class="btn btn-success btn-lg">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#" class="btn btn-info btn-lg">
-                    <i class="fas fa-info-circle"></i>
-                  </a>
-                  <a href="#" class="btn btn-warning btn-lg">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </a>
-                  <a href="#" class="btn btn-danger btn-lg">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </div>
-              </div>
-              <!-- Brand Buttons -->
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Brand Buttons</h6>
-                </div>
-                <div class="card-body">
-                  <p>Google and Facebook buttons are available featuring each company's respective
-                    brand color. They are used on the user login and registration pages.</p>
-                  <p>You can create more custom buttons by adding a new color variable in the
-                    <code>_variables.scss</code> file and then using the Bootstrap button variant mixin to create a new
-                    style, as demonstrated in the <code>_buttons.scss</code> file.</p>
-                  <a href="#" class="btn btn-google btn-block"><i class="fab fa-google fa-fw"></i>.btn-google</a>
-                  <a href="#" class="btn btn-facebook btn-block"><i
-                      class="fab fa-facebook-f fa-fw"></i>.btn-facebook</a>
-                </div>
-              </div>
-            </div>
-            <!-- Split Buttons with Icon -->
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Split Buttons with Icon</h6>
-                </div>
-                <div class="card-body">
-                  <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and
-                    the markup in the
-                    examples below. The examples below also use the <code>.text-white-50</code>
-                    helper class on the
-                    icons for additional styling, but it is not required.</p>
-                  <a href="#" class="btn btn-primary btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-flag"></i>
-                    </span>
-                    <span class="text">Split Button Primary</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-success btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-check"></i>
-                    </span>
-                    <span class="text">Split Button Success</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-info btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-info-circle"></i>
-                    </span>
-                    <span class="text">Split Button Info</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-warning btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-exclamation-triangle"></i>
-                    </span>
-                    <span class="text">Split Button Warning</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-danger btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-trash"></i>
-                    </span>
-                    <span class="text">Split Button Danger</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-secondary btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                    <span class="text">Split Button Secondary</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-light btn-icon-split">
-                    <span class="icon text-gray-600">
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                    <span class="text">Split Button Primary</span>
-                  </a>
-                  <div class="mb-4"></div>
-                  <p>Also works with small and large button classes!</p>
-                  <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-flag"></i>
-                    </span>
-                    <span class="text">Split Button Small</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-primary btn-icon-split btn-lg">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-flag"></i>
-                    </span>
-                    <span class="text">Split Button Large</span>
-                  </a>
-                </div>
-              </div>
-              <!-- Disabled Buttons -->
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Disabled Buttons</h6>
-                </div>
-                <div class="card-body">
-                  <p>Make buttons look inactive by adding the <code class="highlighter-rouge">disabled</code> boolean
-                    attribute to any <code class="highlighter-rouge">&lt;button&gt;</code> element.
-                  </p>
-                  <button type="button" class="btn btn-primary mb-1" disabled>Primary</button>
-                  <button type="button" class="btn btn-secondary mb-1" disabled>Secondary</button>
-                  <button type="button" class="btn btn-success mb-1" disabled>Success</button>
-                  <button type="button" class="btn btn-danger mb-1" disabled>Danger</button>
-                  <button type="button" class="btn btn-warning mb-1" disabled>Warning</button>
-                  <button type="button" class="btn btn-info mb-1" disabled>Info</button>
-                </div>
+                <div class="card-footer"></div>
               </div>
             </div>
           </div>
-          <!-- Row -->
-          <!-- Documentations Link -->
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>For more documentations you can visit<a href="https://getbootstrap.com/docs/4.3/components/buttons/"
-                  target="_blank">
-                  bootstrap buttons documentations.</a></p>
-            </div>
-          </div>
+          <!--Row-->
 
           <!-- Modal Logout -->
           <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
@@ -578,29 +583,48 @@
               </div>
             </div>
           </div>
-          
+
         </div>
-        <!-- Container Fluid -->
+        <!---Container Fluid-->
       </div>
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by <b><a href="https://indrijunanda.gitlab.io/"
-                  target="_blank">indrijunanda</a></b> </span>
+            <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by
+              <b><a href="https://indrijunanda.gitlab.io/" target="_blank">AMB Solutions</a></b>
+            </span>
           </div>
         </div>
       </footer>
+      <!-- Footer -->
     </div>
   </div>
-  <!-- scroll to top -->
+
+  <!-- Scroll to top -->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/ruang-admin.min.js"></script>
+  <!--For Table-->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/2.1.7/js/dataTables.bootstrap5.js"></script>
+  <script src="https://cdn.datatables.net/searchpanes/2.3.2/js/dataTables.searchPanes.js"></script>
+  <script src="https://cdn.datatables.net/searchpanes/2.3.2/js/searchPanes.bootstrap5.js"></script>
+  <script src="https://cdn.datatables.net/select/2.1.0/js/dataTables.select.js"></script>
+  <script>
+    new DataTable('#example', {
+    
+    });
+  </script>
+  <!--Close-->
+
 </body>
 
 </html>
